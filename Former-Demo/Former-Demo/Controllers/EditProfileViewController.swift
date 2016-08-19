@@ -44,15 +44,21 @@ final class EditProfileViewController: FormViewController {
             }.onTextChanged {
                 Profile.sharedInstance.nickname = $0
         }
-        let locationRow = TextFieldRowFormer<ProfileFieldCell>(instantiateType: .Nib(nibName: "ProfileFieldCell")) { [weak self] in
-            $0.titleLabel.text = "Location"
-            $0.textField.inputAccessoryView = self?.formerInputAccessoryView
-            }.configure {                
-                $0.placeholder = "Add your location"
-                $0.text = Profile.sharedInstance.location
-            }.onTextChanged {
-                Profile.sharedInstance.location = $0
-        }
+		
+		let locationRow = LabelRowFormer<ProfileLocationCell>(instantiateType: .Nib(nibName: "ProfileLocationCell")) { [weak self] in
+			$0.accessoryType = .DisclosureIndicator
+			}.onSelected { rowFormer in 
+				let controller = MapViewController({_ in
+					self.navigationController?.popViewControllerAnimated(true)
+				})
+				controller.row = rowFormer
+				self.navigationController?.pushViewController(controller, animated: true)
+				self.former.deselect(true)
+			}.configure {
+				$0.text = "Location"
+				$0.subText = Profile.sharedInstance.location?.description
+		}
+
         let phoneRow = TextFieldRowFormer<ProfileFieldCell>(instantiateType: .Nib(nibName: "ProfileFieldCell")) { [weak self] in
             $0.titleLabel.text = "Phone"
             $0.textField.keyboardType = .NumberPad

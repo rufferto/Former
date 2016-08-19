@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 final class Profile {
     
@@ -19,7 +20,7 @@ final class Profile {
     var introduction: String?
     var moreInformation = false
     var nickname: String?
-    var location: String?
+    var location: CLLocation?
     var phoneNumber: String?
     var job: String?
 }

@@ -37,6 +37,8 @@
 		2AC381571BA447D3009C7EFF /* UIColor+FormerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC381481BA447D3009C7EFF /* UIColor+FormerDemo.swift */; };
 		2AC3815A1BA447D3009C7EFF /* FormerInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3814D1BA447D3009C7EFF /* FormerInputAccessoryView.swift */; };
 		2AC3815C1BA4498D009C7EFF /* TextSelectorViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3815B1BA4498D009C7EFF /* TextSelectorViewContorller.swift */; };
+		D396D1731D679976002FEC4A /* ProfileLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396D1721D679976002FEC4A /* ProfileLocationCell.swift */; };
+		D396D1751D67C564002FEC4A /* ProfileLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D396D1741D67C564002FEC4A /* ProfileLocationCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		2AC381491BA447D3009C7EFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC3814D1BA447D3009C7EFF /* FormerInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormerInputAccessoryView.swift; sourceTree = "<group>"; };
 		2AC3815B1BA4498D009C7EFF /* TextSelectorViewContorller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSelectorViewContorller.swift; sourceTree = "<group>"; };
+		D396D1721D679976002FEC4A /* ProfileLocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLocationCell.swift; sourceTree = "<group>"; };
+		D396D1741D67C564002FEC4A /* ProfileLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileLocationCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +131,13 @@
 		2ABE8A561BE4B7FF00F9EB85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2AA777B81BEE9A7400900B01 /* ColorListCell.xib */,
+				2AA777AE1BED4D7300900B01 /* DynamicHeightCell.xib */,
 				2AA777B01BEE7F2F00900B01 /* LoginViewController.storyboard */,
 				2ABE8A571BE4B7FF00F9EB85 /* ProfileFieldCell.xib */,
 				2ABE8A581BE4B7FF00F9EB85 /* ProfileImageCell.xib */,
 				2ABE8A601BE4BC8100F9EB85 /* ProfileLabelCell.xib */,
-				2AA777AE1BED4D7300900B01 /* DynamicHeightCell.xib */,
-				2AA777B81BEE9A7400900B01 /* ColorListCell.xib */,
+				D396D1741D67C564002FEC4A /* ProfileLocationCell.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				2A53250F1BE4935700E4A3F2 /* ProfileImageCell.swift */,
+				D396D1721D679976002FEC4A /* ProfileLocationCell.swift */,
 				2A5325141BE4A55D00E4A3F2 /* ProfileFieldCell.swift */,
 				2ABE8A5E1BE4BC5C00F9EB85 /* ProfileLabelCell.swift */,
 				2AA777AC1BED4D3300900B01 /* DynamicHeightCell.swift */,
@@ -297,6 +303,7 @@
 				2AC3814F1BA447D3009C7EFF /* Assets.xcassets in Resources */,
 				2ABE8A5A1BE4B7FF00F9EB85 /* ProfileImageCell.xib in Resources */,
 				2AC381501BA447D3009C7EFF /* LaunchScreen.storyboard in Resources */,
+				D396D1751D67C564002FEC4A /* ProfileLocationCell.xib in Resources */,
 				2ABE8A591BE4B7FF00F9EB85 /* ProfileFieldCell.xib in Resources */,
 				2AA777B91BEE9A7400900B01 /* ColorListCell.xib in Resources */,
 				2AA777B11BEE7F2F00900B01 /* LoginViewController.storyboard in Resources */,
@@ -320,6 +327,7 @@
 				2A5325101BE4935700E4A3F2 /* ProfileImageCell.swift in Sources */,
 				2AA777B71BEE88BD00900B01 /* CenterLabelCell.swift in Sources */,
 				2AC381551BA447D3009C7EFF /* TopViewController.swift in Sources */,
+				D396D1731D679976002FEC4A /* ProfileLocationCell.swift in Sources */,
 				2AC381571BA447D3009C7EFF /* UIColor+FormerDemo.swift in Sources */,
 				2AC381541BA447D3009C7EFF /* DefaultsViewController.swift in Sources */,
 				2AC3815A1BA447D3009C7EFF /* FormerInputAccessoryView.swift in Sources */,
